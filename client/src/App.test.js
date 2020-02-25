@@ -24,4 +24,5 @@ test("toggle is clicked", () => {
   const { getByTestId } = render(<DarkMode />);
   const toggleBtn = getByTestId("toggle-btn");
   fireEvent.click(toggleBtn);
+  expect(getByTestId("toggle-btn")).toBeTruthy();
 });
