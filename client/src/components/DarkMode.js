@@ -14,6 +14,7 @@ const DarkMode = () => {
                 <div 
                 onClick={toggleMode} 
                 className={darkMode ? 'toggle toggled' : 'toggle'}
+                data-testid="toggle-btn"
                 />
             </div>
         </nav>
